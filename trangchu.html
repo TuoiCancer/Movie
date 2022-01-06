@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="./asset/reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <nav class="nav">
+                <a href="#" class="logo__link">
+                    <img src="./flix-movie-homepage-main/images/logo.png" alt=""
+                        class="nav__logo-img">
+                </a>
+                <div class="nav__input-wrap">
+                    <i class="nav__search fas fa-search"></i>
+                    <input type="text" placeholder="Type something..." class="nav__input">
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item active">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#movies" class="nav__link">Movies</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#TVshows" class="nav__link">TV shows</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cartoon" class="nav__link">Cartoon</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#series" class="nav__link">Series</a>
+                    </li>
+                    <div class="nav__notify">
+                        <i class="nav__notify-icon ti-bell" >
+                        </i>
+                        <div class="nav__notify-wrap ">
+                            <div class="nav__notify-item">
+                                <img src="./flix-movie-homepage-main/images/user.jfif" alt="" class="nav__notify-img">
+                                <a href="#" class="nav__notify-link">
+                                Daisy vừa phản hồi bình luận của bạn.
+                                </a>
+                            </div>
+                            <div class="nav__notify-item">
+                                <img src="./flix-movie-homepage-main/images/squid game.jpeg" alt="" class="nav__notify-img">
+                                <a href="#" class="nav__notify-link">
+                                    Đề xuất: Squid Game (Trò chơi con mực) Bộ phim truyền hình của Hàn Quốc 
+                                </a>
+                            </div>
+                            <div class="nav__notify-item">
+                                <img src="./flix-movie-homepage-main/images/logo in tbao.png" alt="" class="nav__notify-img">
+                                <a href="#" class="nav__notify-link">
+                                    Chào mừng bạn đến với MV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__user">
+                        <i class="nav__user-icon far fa-user"></i>
+                        <div class="nav__user-wrap ">
+                            <div class="nav__user-item">
+                                <img src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt="">
+                                <div>
+                                    <h1>Anna</h1>
+                                    <p>@anna</p>
+                                </div>
+                            </div>
+                            <div class="nav__user-item">
+                                <i class="fas fa-cog"></i>
+                                <a href="#">Setting</a>
+                            </div>
+                            <div class="nav__user-item">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <a href="index.html">Sign out</a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div class="nav__layer"></div>
+            </nav>
+            <!-- <i class="icon-left fas fa-chevron-left"></i>
+            <i class="icon-right fas fa-chevron-right"></i> -->
+            <div class="swiper mySwiperHeader">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide header">
+                        <div class="layer_blur"></div>
+                        <img src="./flix-movie-homepage-main/images/wanda-banner.jpg" alt=""
+                            class="header__bg">
+                        <div class="header__content-wrap">
+
+                            <h1 class="header__title">WANDA VISION</h1>
+                            <div class="header__list">
+                                <div class="header__item">
+                                    <i class="fas fa-star"></i>
+                                    <p class="header__text">9.5</p>
+                                </div>
+                                <div class="header__item">
+                                    <i class="far fa-clock"></i>
+                                    <p class="header__text">1h20m</p>
+                                </div>
+                                <div class="header__item">
+                                    <p>HD 16+</p>
+                                </div>
+                            </div>
+                            <p class="header__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+                                odio id
+                                dui tempor
+                                interdum
+                                sit
+                                amet id felis. Integer enim sem, maximus et porta sed, aliquet ...
+                            </p>
+                            <button class="btn--watch">Watch now</button>
+                            <p class="header__trailer">Trailer</p>
+                            <div class="header__watch-wrap">
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/wandar vision.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/elizabeth-olsen-wandavision-marvel-disney-1613385583.jpeg"
+                                        alt="" class="header__video-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide header ">
+                        <div class="layer_blur"></div>
+                        <img src="./flix-movie-homepage-main/images/transformer-banner.jpg" alt=""
+                            class="header__bg">
+                        <div class="header__content-wrap">
+
+                            <h1 class="header__title">TRANSFORMER</h1>
+                            <div class="header__list">
+                                <div class="header__item">
+                                    <i class="fas fa-star"></i>
+                                    <p class="header__text">9</p>
+                                </div>
+                                <div class="header__item">
+                                    <i class="far fa-clock"></i>
+                                    <p class="header__text">1h30m</p>
+                                </div>
+                                <div class="header__item">
+                                    <p>HD 16+</p>
+                                </div>
+                            </div>
+                            <p class="header__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+                                odio id
+                                dui tempor
+                                interdum
+                                sit
+                                amet id felis. Integer enim sem, maximus et porta sed, aliquet ...
+                            </p>
+                            <button class="btn--watch">Watch now</button>
+                            <p class="header__trailer">Trailer</p>
+                            <div class="header__watch-wrap">
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/transformer.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/transformers-5-son-poster-kTz9-9290-2964-1497250338.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide header">
+                        <div class="layer_blur"></div>
+                        <img src="./flix-movie-homepage-main/images/end game.jpeg" alt=""
+                            class="header__bg">
+                        <div class="header__content-wrap">
+
+                            <h1 class="header__title">AVENGER: END GAME</h1>
+                            <div class="header__list">
+                                <div class="header__item">
+                                    <i class="fas fa-star"></i>
+                                    <p class="header__text">9.5</p>
+                                </div>
+                                <div class="header__item">
+                                    <i class="far fa-clock"></i>
+                                    <p class="header__text">2h20m</p>
+                                </div>
+                                <div class="header__item">
+                                    <p>HD 16+</p>
+                                </div>
+                            </div>
+                            <p class="header__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+                                odio id
+                                dui tempor
+                                interdum
+                                sit
+                                amet id felis. Integer enim sem, maximus et porta sed, aliquet ...
+                            </p>
+                            <button class="btn--watch">Watch now</button>
+                            <p class="header__trailer">Trailer</p>
+                            <div class="header__watch-wrap">
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/end game.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/Avengers-Endgame-2019.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide header">
+                        <div class="layer_blur"></div>
+                        <img src="./flix-movie-homepage-main/images/black widow.png" alt=""
+                            class="header__bg">
+                        <div class="header__content-wrap">
+
+                            <h1 class="header__title">BLACK WIDOW</h1>
+                            <div class="header__list">
+                                <div class="header__item">
+                                    <i class="fas fa-star"></i>
+                                    <p class="header__text">8.5</p>
+                                </div>
+                                <div class="header__item">
+                                    <i class="far fa-clock"></i>
+                                    <p class="header__text">1h40m</p>
+                                </div>
+                                <div class="header__item">
+                                    <p>HD 16+</p>
+                                </div>
+                            </div>
+                            <p class="header__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+                                odio id
+                                dui tempor
+                                interdum
+                                sit
+                                amet id felis. Integer enim sem, maximus et porta sed, aliquet ...
+                            </p>
+                            <button class="btn--watch">Watch now</button>
+                            <p class="header__trailer">Trailer</p>
+                            <div class="header__watch-wrap">
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/black widow.jpg"
+                                        alt="" class="header__video-img">
+                                </div>
+                                <div class="header__video">
+                                    <a href="#" class="header__video-link">
+                                        <i class="trailer-icon fas fa-caret-right"></i>
+                                    </a>
+                                    <img src="./flix-movie-homepage-main/images/video trailer/black-widow-1563941833-4834-1563942049.png"
+                                        alt="" class="header__video-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="movies" class="trending">
+            <div class="header__template">
+                <h1>Trending movies</h1>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class=" swiper mySwiperTrending trending__list">
+                <div class="swiper-wrapper">
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="https://gamek.mediacdn.vn/133514250583805952/2021/11/17/photo-1-1637118381839432740223.jpg"
+                                    alt="" class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2021</p>
+                                <h2 class="trending__title">Spiderman Far from home </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>84/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="https://txp-storage.sgp1.digitaloceanspaces.com/wp-content/uploads/2021/12/07175859/25.jpg"
+                                    alt="" class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">Korea,2021</p>
+                                <h2 class="trending__title">Our Beloved Summer </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>85/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="https://cinematone.info/public/poster_001/211106094934_sing_2_eYCOz.jpg"
+                                    alt="" class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2021</p>
+                                <h2 class="trending__title">Sing 2</h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>90/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Music</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="https://www.cgv.vn/media/catalog/product/cache/3/image/c5f0a1eff4c394a251036189ccddaacd/p/o/poster_shangchi.jpg"
+                                    alt="" class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2021</p>
+                                <h2 class="trending__title">Shang Chi</h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>90/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Marvel</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="https://bazaarvietnam.vn/wp-content/uploads/2021/09/phim-tro-choi-con-muc-squid-game-poster-netflixkr.jpg"
+                                    alt="" class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">Korea, 2021</p>
+                                <h2 class="trending__title">Squid Game </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>95/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">horror fiction</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/6.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">Malcolm & Marie </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>84/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/1.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">Malcolm & Marie </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>84/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/2.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">Framing Britney Spears </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>70/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/3.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2020</p>
+                                <h2 class="trending__title">Wonder Woman </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>90/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Marvel, advenger</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/4.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">New of the word </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>84/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/5.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">The litle things </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>82/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class=" swiper-slide trending__item">
+                        <a href="#" class="trending__link">
+                            <div class="trending__wrap-img">
+                                <img src="./flix-movie-homepage-main/images/trending movie/6.JPG" alt=""
+                                    class="trending__img">
+                            </div>
+                            <div class="trending__wrap">
+                                <p class="trending__time">USA,2018</p>
+                                <h2 class="trending__title">Malcolm & Marie </h2>
+                                <div class="trending__rating">
+                                    <div>
+                                        <img src="./logo film.png" alt="">
+                                        <span>84/100</span>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-heart"></i>
+                                        <span>87%</span>
+                                    </div>
+                                </div>
+                                <p class="trending__type">Romantic</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="TVshows" class="feature">
+            <div class="header__template">
+                <h1>Feature TV shows</h1>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper mySwiper feature__list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="./flix-movie-homepage-main/images/feature TV show/1.JPG"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title=" Game of thrones " class="feature__link">
+                                Game of thrones
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="./flix-movie-homepage-main/images/feature TV show/2.JPG"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title="The Falcon and the Winter Soldier"
+                                class="feature__link">
+                                The Falcon and the Winter Soldier
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="./flix-movie-homepage-main/images/feature TV show/3.JPG"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="#" title=" WandaVision " class="feature__link">
+                                WandaVision
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="./flix-movie-homepage-main/images/feature TV show/4.JPG"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title=" Grey's Anatomy " class="feature__link">
+                                Grey's Anatomy
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="./flix-movie-homepage-main/images/feature TV show/5.JPG"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title=" Game of thrones " class="feature__link">
+                                Game of thrones
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="https://i.gadgets360cdn.com/large/red_notice_netflix_first_look_1625826361591.jpg"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title="Red Notice" class="feature__link">
+                                Red Notice
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="https://ss-images.saostar.vn/wp700/2019/08/30/5942376/ebqthfvxyaipxvu.jpg"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title="Tune in for love" class="feature__link">
+                                Tune in for love
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/vi/f/f6/Cruella_2021_film_poster.jpg"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <a href="#" title="Cruella" class="feature__link">
+                                Cruella
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="https://tvmoi.net/wp-content/uploads/2019/06/truoc-ngay-em-den-3191-poster.jpg"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title=" Me before you" class="feature__link">
+                                Me before you
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide feature__item">
+                        <div>
+                            <img src="https://bizweb.dktcdn.net/100/064/189/products/dce7zfnvoai3pgh-1003229.jpg?v=1506657293107"
+                                alt="" class="feature__img">
+                        </div>
+                        <div class="feature__content">
+                            <p>Sci-FI & Fantasy</p>
+                            <div class="feature__star-wrap">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#" title="Spider man come home" class="feature__link">
+                                Spider man come home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cartoon" class="cartoon">
+            <div class="header__template">
+                <h1>Cartoon</h1>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="swiper mySwiperCartoon cartoon__list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/your-name.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Your name</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h57m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/coco.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Coco</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>2h00m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="https://photos.animetvn.tv/upload/film/moana_ver8.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Moana</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h40m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="https://4.bp.blogspot.com/-BQThiCOucAo/VsWrZVDzc8I/AAAAAAAAEYI/Nr0mJST3lFw/s1600/affiche-ratatouille-06.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Chú chuột đầu bếp đầu bếp </h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h36m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/dragon.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Dragon Ball</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h36m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/over-the-moon.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Over the moon</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/weathering.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Weathering</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/demon-slayer.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Demon slayer</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/1.jpg" alt=""
+                                    class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Demon slayer</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="https://static.247phim.com/155101/conversions/5f744251ab037_The-New-Records-of-Nobita-s-Spaceblazer-d-435_627.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Doraemon</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="./flix-movie-homepage-main/images/cartoons/croods.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Croods</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>1h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cartoon_item">
+                        <div class="cartoon__wrap">
+                            <div class="">
+                                <img src="https://static.247phim.com/146524/conversions/5ebe03fc5fcdc_frozen_2_d-435_627.jpg"
+                                    alt="" class="cartoon__img">
+                            </div>
+                            <div class="cartoon__content">
+                                <a href="#" class="cartoon__link">
+                                    <i class="fas fa-caret-right"></i>
+                                    <h1 class="cartoon__title">Frozen II</h1>
+                                </a>
+                                <div>
+                                    <i class="far fa-clock"></i>
+                                    <p>2h45m</p>
+                                </div>
+                                <div class="cartoon__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartoon__next-icon swiper-button-next"></div>
+                <div class="cartoon__prev-icon swiper-button-prev"></div>
+
+            </div>
+        </section>
+
+        <section class="series" id="series">
+            <div class="header__template">
+                <h1>Series</h1>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class=" mySwiperSeries series__list">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/stranger-thing.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Stranger Things</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt voluptate cupiditate, dolorum placeat harum velit
+                                    quaerat ipsam magni voluptates cumque, facilis rerum dolore
+                                    voluptatibus sed. Quod, ea vero.</p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/mandalorian.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Stranger Things</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/penthouses.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Penthouses</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/star-trek.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Star trek</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/supergirl.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Supergirl</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="./flix-movie-homepage-main/images/series/the-falcon.webp"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Supergirl</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkrFHZxZQw306Z6K87mRN9PPKwLwkfMdusSmOf-5ZSkAtXukSe"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>Black Island</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide series__item">
+                        <div class="series__card-inner">
+                            <div class="series__card-front">
+                                <a href="#" class="series__link">
+                                    <img src="https://occ-0-1723-1722.1.nflxso.net/art/a8f5d/1a386c6d81234d5c5ce6efbd785ed2c910ca8f5d.jpg"
+                                        alt="" class="series__img">
+                                </a>
+                            </div>
+                            <div class="series__card-back">
+                                <h1>The Perfect Match</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+                                    soluta sunt
+                                    voluptate cupiditate, dolorum placeat harum velit quaerat ipsam
+                                    magni voluptates
+                                    cumque, facilis rerum dolore voluptatibus sed. Quod, ea vero.
+                                </p>
+                                <button class="series__btn btn--watch">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="header__template">
+                <h1>Review</h1>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="review__wrap">
+                <div class="review__input">
+                    <h1>Your <span>comment</span></h1>
+                    <form action="" class="review__form">
+                        <input type="text" class="review__name" placeholder="Full name">
+                        <input type="text" class="review__phone" placeholder="Phone number">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"
+                            spellcheck="false"></textarea>
+                        <button class="review__btn">Send us now</button>
+                    </form>
+                </div>
+                <div class="review__content swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review__item">
+                            <img src="https://images.unsplash.com/photo-1637722873821-3196d8c0f74f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="" class="review__img">
+                            <h1>Tran Thi Cam Thu</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores
+                                possimus repudiandae
+                                accusantium voluptates. Tempore fugit debitis corrupti est quisquam
+                                quasi recusandae.
+                            </p>
+                        </div>
+
+                        <div class="swiper-slide review__item">
+                            <img src="https://images.unsplash.com/photo-1635807012936-540d20f59e34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="" class="review__img">
+                            <h1>Le Thi Kim Chi</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores
+                                possimus repudiandae
+                                accusantium voluptates. Tempore fugit debitis corrupti est quisquam
+                                quasi recusandae.
+                            </p>
+                        </div>
+                        <div class="swiper-slide review__item">
+                            <img src="https://images.unsplash.com/photo-1574243091999-8840e2931fe8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="" class="review__img">
+                            <h1>Le Cong Minh</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores
+                                possimus repudiandae
+                                accusantium voluptates. Tempore fugit debitis corrupti est quisquam
+                                quasi recusandae.
+                            </p>
+                        </div>
+                        <div class="swiper-slide review__item">
+                            <img src="https://images.unsplash.com/photo-1621525278689-4779d647a9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                alt="" class="review__img">
+                            <h1>Marian DK</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores
+                                possimus repudiandae
+                                accusantium voluptates. Tempore fugit debitis corrupti est quisquam
+                                quasi recusandae.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <img src="./flix-movie-homepage-main/footer.png" alt="" class="footer__img-top">
+            <div class="footer__list">
+                <div class="footer__item">
+                    <img src="./flix-movie-homepage-main/images/logo.png" alt=""
+                        class="footer__logo">
+                    <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur ut diam et nibh condimentum
+                        venenatis condimentum venenatis...</p>
+                </div>
+                <div class="footer__item">
+                    <h1 class="footer__title">our agency</h1>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#" class="footer__link">Home</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#trending" class="footer__link">Trending</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#movies" class="footer__link">Movies</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#cartoon" class="footer__link">Cartoon</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#series" class="footer__link">Series</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h1 class="footer__title">contact</h1>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#" class="footer__link">Help/FQA</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#" class="footer__link">Press</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-right"></i>
+                        <a href="#" class="footer__link">Affilate</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h1 class="footer__title">discover our app</h1>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__socials-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__socials-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__socials-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <a href="#" class="footer__contact-link">
+                            <img src="./flix-movie-homepage-main/images/google-play.png" alt="">
+                        </a>
+                        <a href="#" class="footer__contact-link">
+                            <img src="./flix-movie-homepage-main/images/app-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <p class="footer__right">Copy right by Xuan Tuoi</p>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./asset/home.js"></script>
+</body>
+
+</html>
